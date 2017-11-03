@@ -1,7 +1,7 @@
 <template lang='pug'>
 
 .opportunity
-	span hey
+	span {{ content }}
 
 </template>
 
