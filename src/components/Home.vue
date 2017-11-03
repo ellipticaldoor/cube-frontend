@@ -1,12 +1,11 @@
 <template lang='pug'>
 
-#app
-	router-view
+#home
 
 </template>
 
 <script>
 export default {
-	name: 'app',
+	name: 'home',
 }
 </script>

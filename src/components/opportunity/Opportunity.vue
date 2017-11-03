@@ -1,12 +1,11 @@
 <template lang='pug'>
 
-#app
-	router-view
+.opportunity
 
 </template>
 
 <script>
 export default {
-	name: 'app',
+	name: 'opportunity',
 }
 </script>
