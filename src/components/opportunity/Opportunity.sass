@@ -1,0 +1,48 @@
+$space: 1rem
+$header_height: 200px
+$gray: #e9ecef
+
+.opportunity
+	width: calc(50% - #{$space} * 2)
+	margin: $space
+	border: 1px solid $gray
+	border-radius: 2px
+
+	.header
+		position: relative
+
+		.image_cover
+			width: 100%
+			height: 200px
+			object-fit: cover
+			object-position: center
+
+		.image
+			border: 1px solid $gray
+			position: absolute
+			width: 100px
+			right: 10px
+			bottom: -10px
+
+	.info
+		padding: $space
+
+		.title
+			font-weight: bolder
+			font-size: 130%
+
+		.description
+			font-size: 90%
+			margin: $space 0
+
+		.target
+			font-weight: bolder
+
+		.stats
+			display: flex
+			justify-content: space-around
+			margin: $space
+			text-align: center
+
+			.value
+				font-weight: bolder

@@ -1,10 +1,12 @@
 <template lang='pug'>
 
 #home
-	opportunity(
-		v-for='content of opportunities'
-		v-bind='{ content }'
-	)
+	#opportunities
+		opportunity(
+			v-for='content of opportunities'
+			v-bind='{ content }'
+			key='content._id'
+		)
 
 </template>
 
@@ -34,3 +36,5 @@ export default {
 	},
 }
 </script>
+
+<style lang='sass' src='./Home.sass'></style>

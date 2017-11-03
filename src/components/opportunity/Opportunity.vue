@@ -1,26 +1,28 @@
 <template lang='pug'>
 
 .opportunity
-	img(:src='image_cover')
-	img(:src='image')
+	.header
+		img.image_cover(:src='image_cover')
+		img.image(:src='image')
 
-	.title {{ title }}
-	.description {{ description }}
+	.info
+		.title {{ title }}
+		.description {{ description }}
 
-	.target £{{ target }} Target
+		.target £{{ target }} Target
 
-	.stats
-		.stat
-			.raised £{{ raised }}
-			span Raised
+		.stats
+			.stat
+				.value £{{ raised }}
+				span Raised
 
-		.stat
-			.equity {{ equity }}%
-			span Equity
+			.stat
+				.value {{ equity }}%
+				span Equity
 
-		.stat
-			.investors {{ investors }}
-			span Investors
+			.stat
+				.value {{ investors }}
+				span Investors
 
 </template>
 
@@ -35,3 +37,5 @@ export default {
 	},
 }
 </script>
+
+<style lang='sass' src='./Opportunity.sass'></style>
